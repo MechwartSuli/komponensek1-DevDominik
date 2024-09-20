@@ -1,8 +1,12 @@
-const Footer = (props: string[]) => {
+type idk = {
+    links: string[]
+}
+
+const Footer = ({links}: idk) => {
   return (
-    <div>{props.map(item => {
+    <div>{links.map(item => (
         <p>{item}</p>
-    })}</div>
+    ))}</div>
   )
 }
 
